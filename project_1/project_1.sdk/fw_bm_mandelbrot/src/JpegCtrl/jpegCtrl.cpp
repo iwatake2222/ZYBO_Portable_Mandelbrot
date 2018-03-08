@@ -68,10 +68,10 @@ void JpegCtrl::entryRun()
 //		LOG("Encode %08X to %08X\n", m_currentBuffer, jpegBuffer);
 		int jpegSize;
 		Xil_DCacheInvalidateRange(m_currentBuffer, IMAGE_WIDTH * IMAGE_HEIGHT * BYTE_PER_PIXEL);
-		Xil_DCacheInvalidateRange(jpegBuffer, jpegSize);	// so that the reader can read from DDR
 		jpegSize = encode(jpegBuffer, m_currentBuffer);
 		Xil_DCacheFlushRange(jpegBuffer, jpegSize);	// so that the reader can read from DDR
-#if 1
+
+#if 0
 		/* todo: for some reasons, I need these redundant operations. Otherwise, created jpeg image destroyed */
 		/* there might be problem related to cache coherrency */
 		jpegSize = encode(jpegBuffer, m_currentBuffer);

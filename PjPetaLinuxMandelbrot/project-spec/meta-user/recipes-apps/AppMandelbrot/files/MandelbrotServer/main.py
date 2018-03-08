@@ -52,12 +52,45 @@ def colorEntry():
 	r.set_header('Content-Type', 'application/json')
 	return r
 
+def clearCache():
+	# todo: There must be better way
+	try:
+		fdMem = os.open("/dev/mem", os.O_RDONLY | os.O_SYNC)
+		mem = mmap.mmap(fdMem, 0x00100000, mmap.MAP_SHARED, mmap.PROT_READ, offset = 0x3FF00000)
+		mem.seek(0)
+		fdJpeg = open("static/temp.jpg", "wb")
+		fdJpeg.write(mem.read(0x00100000))
+		fdJpeg.close()
+	except:
+		pass
+
+	mem.close()
+	os.close(fdMem)
+
+# todo: simple mutex
+lock_getStatus = 0
+def lock_get():
+	global lock_getStatus
+	while lock_getStatus != 0:
+		sleep(0.1)
+	lock_getStatus = 1
+
+def lock_release():
+	global lock_getStatus
+	lock_getStatus = 0
+
 # curl -H "Accept: application/json" -H "Content-type: application/json" -X POST -d '{"dummy":"dummy"}' http://192.168.1.87:8080/getStatus
 @route('/getStatus', method='POST')
 def getStatus():
 	global fdRpmsg
 	cmd = "get"
 	# print(cmd)
+	lock_get()
+
+	# todo: Clear cache before reading JPEG image(DDR written by CPU1)
+	#       Uncache read operation doesn't work with O_SYNC option, for some reasons...
+	clearCache()	
+
 	os.write(fdRpmsg, cmd)
 	ret = os.read(fdRpmsg, 255)
 	# ret = '{"ret":"ok", "jpegAddress":"0x3F800000", "jpegSize":"44758", "position":"X = 0.000000, Y = 0.000000, Zoom = 1.000000"}'
@@ -68,22 +101,24 @@ def getStatus():
 	jpegSize = int(ret["jpegSize"], 10)
 
 	# save jpeg file
-	fdMem = os.open("/dev/mem", os.O_RDWR | os.O_SYNC)
-	mem = mmap.mmap(fdMem, jpegSize, mmap.MAP_SHARED, mmap.PROT_READ | mmap.PROT_WRITE, offset = jpegAddress)
-	mem.seek(0)
 	try:
+		fdMem = os.open("/dev/mem", os.O_RDONLY | os.O_SYNC)
+		mem = mmap.mmap(fdMem, jpegSize, mmap.MAP_SHARED, mmap.PROT_READ, offset = jpegAddress)
+		mem.seek(0)
 		fdJpeg = open("static/00.jpg", "wb")
 		fdJpeg.write(mem.read(jpegSize))
 		fdJpeg.close()
 	except:
 		# reach here when jpeg file is being loaded
 		print("conflict")
+
 	mem.close()
 	os.close(fdMem)
 
 	retBody = {"ret": "ok", "position":positionStr}
 	r = HTTPResponse(status=200, body=retBody)
 	r.set_header('Content-Type', 'application/json')
+	lock_release()
 	return r
 
 def setPosition(x, y, zoom):

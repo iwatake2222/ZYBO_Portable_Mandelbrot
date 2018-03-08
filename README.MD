@@ -60,9 +60,8 @@ When you debug, you need to stop auto-started application by disabling init.d da
 - Stop auto-started application and OpenAMP manually
 
 	```sh:ZYBO_terminal
-	ps | grep mandelbrot_init
-	ps | grep main.py
-	kill -9 1234
+	ps aux | grep 'python main.py' | grep -v grep | awk '{ print "kill -9", $1 }' | sh
+	ps aux | grep mandelbrot_init | grep -v grep | awk '{ print "kill -9", $1 }' | sh
 	echo stop > /sys/class/remoteproc/remoteproc0/state
 	```
 
@@ -160,7 +159,7 @@ petalinux-package --boot --force --fsbl images/linux/zynq_fsbl.elf --fpga images
 	- `modprobe rpmsg_user_dev_driver`
 	- `echo fw_bm_mandelbrot.elf > /sys/class/remoteproc/remoteproc0/firmware`
 	- `echo start > /sys/class/remoteproc/remoteproc0/state`
-	- `cd www/MandelbrotServer && python main.py`
+	- `cd www/MandelbrotServer ; python main.py`
 
 ### How to run as standalone firmware
 It might be userful if you can run the baremetal firmware as standalone, especially for debugging related to hardware.

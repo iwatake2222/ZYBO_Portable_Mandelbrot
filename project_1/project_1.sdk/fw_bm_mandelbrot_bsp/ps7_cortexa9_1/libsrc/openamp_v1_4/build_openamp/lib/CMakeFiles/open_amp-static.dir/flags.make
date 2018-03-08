@@ -3,11 +3,11 @@
 
 # compile ASM with C:/Xilinx/SDK/2017.4/gnu/aarch32/nt/gcc-arm-none-eabi/bin/arm-none-eabi-gcc.exe
 # compile C with C:/Xilinx/SDK/2017.4/gnu/aarch32/nt/gcc-arm-none-eabi/bin/arm-none-eabi-gcc.exe
-ASM_FLAGS = -g -IC:/asd/dev/zynq/vivado/project_1/project_1.sdk/fw_bm_mandelbrot_bsp/ps7_cortexa9_1/libsrc/openamp_v1_4/src/open-amp/lib/include   
+ASM_FLAGS = -g -IC:/Users/tak/Desktop/ZYBO_Portable_Mandelbrot/project_1/project_1.sdk/fw_bm_mandelbrot_bsp/ps7_cortexa9_1/libsrc/openamp_v1_4/src/open-amp/lib/include   
 
 ASM_DEFINES = 
 
-C_FLAGS = -O2 -c -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra -DUNDEFINE_FILE_OPS  -DUSE_AMP=1 -IC:/asd/dev/zynq/vivado/project_1/project_1.sdk/fw_bm_mandelbrot_bsp/ps7_cortexa9_1/include -Wall -Wextra -g -IC:/asd/dev/zynq/vivado/project_1/project_1.sdk/fw_bm_mandelbrot_bsp/ps7_cortexa9_1/libsrc/openamp_v1_4/src/open-amp/lib/include   
+C_FLAGS = -O2 -c -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra -DUNDEFINE_FILE_OPS  -DUSE_AMP=1 -IC:/Users/tak/Desktop/ZYBO_Portable_Mandelbrot/project_1/project_1.sdk/fw_bm_mandelbrot_bsp/ps7_cortexa9_1/include -Wall -Wextra -g -IC:/Users/tak/Desktop/ZYBO_Portable_Mandelbrot/project_1/project_1.sdk/fw_bm_mandelbrot_bsp/ps7_cortexa9_1/libsrc/openamp_v1_4/src/open-amp/lib/include   
 
 C_DEFINES = 
 

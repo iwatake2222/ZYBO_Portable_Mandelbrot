@@ -1,4 +1,4 @@
-# Install script for directory: C:/asd/dev/zynq/vivado/project_1/project_1.sdk/fw_bm_mandelbrot_bsp/ps7_cortexa9_1/libsrc/openamp_v1_4/src/open-amp/lib
+# Install script for directory: C:/Users/tak/Desktop/ZYBO_Portable_Mandelbrot/project_1/project_1.sdk/fw_bm_mandelbrot_bsp/ps7_cortexa9_1/libsrc/openamp_v1_4/src/open-amp/lib
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -28,20 +28,20 @@ if(NOT CMAKE_INSTALL_COMPONENT)
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "C:/asd/dev/zynq/vivado/project_1/project_1.sdk/fw_bm_mandelbrot_bsp/ps7_cortexa9_1/libsrc/openamp_v1_4/build_openamp/lib/libopen_amp.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "C:/Users/tak/Desktop/ZYBO_Portable_Mandelbrot/project_1/project_1.sdk/fw_bm_mandelbrot_bsp/ps7_cortexa9_1/libsrc/openamp_v1_4/build_openamp/lib/libopen_amp.a")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "C:/asd/dev/zynq/vivado/project_1/project_1.sdk/fw_bm_mandelbrot_bsp/ps7_cortexa9_1/libsrc/openamp_v1_4/src/open-amp/lib/include/openamp")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "C:/Users/tak/Desktop/ZYBO_Portable_Mandelbrot/project_1/project_1.sdk/fw_bm_mandelbrot_bsp/ps7_cortexa9_1/libsrc/openamp_v1_4/src/open-amp/lib/include/openamp")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("C:/asd/dev/zynq/vivado/project_1/project_1.sdk/fw_bm_mandelbrot_bsp/ps7_cortexa9_1/libsrc/openamp_v1_4/build_openamp/lib/common/cmake_install.cmake")
-  include("C:/asd/dev/zynq/vivado/project_1/project_1.sdk/fw_bm_mandelbrot_bsp/ps7_cortexa9_1/libsrc/openamp_v1_4/build_openamp/lib/virtio/cmake_install.cmake")
-  include("C:/asd/dev/zynq/vivado/project_1/project_1.sdk/fw_bm_mandelbrot_bsp/ps7_cortexa9_1/libsrc/openamp_v1_4/build_openamp/lib/rpmsg/cmake_install.cmake")
-  include("C:/asd/dev/zynq/vivado/project_1/project_1.sdk/fw_bm_mandelbrot_bsp/ps7_cortexa9_1/libsrc/openamp_v1_4/build_openamp/lib/remoteproc/cmake_install.cmake")
-  include("C:/asd/dev/zynq/vivado/project_1/project_1.sdk/fw_bm_mandelbrot_bsp/ps7_cortexa9_1/libsrc/openamp_v1_4/build_openamp/lib/proxy/cmake_install.cmake")
+  include("C:/Users/tak/Desktop/ZYBO_Portable_Mandelbrot/project_1/project_1.sdk/fw_bm_mandelbrot_bsp/ps7_cortexa9_1/libsrc/openamp_v1_4/build_openamp/lib/common/cmake_install.cmake")
+  include("C:/Users/tak/Desktop/ZYBO_Portable_Mandelbrot/project_1/project_1.sdk/fw_bm_mandelbrot_bsp/ps7_cortexa9_1/libsrc/openamp_v1_4/build_openamp/lib/virtio/cmake_install.cmake")
+  include("C:/Users/tak/Desktop/ZYBO_Portable_Mandelbrot/project_1/project_1.sdk/fw_bm_mandelbrot_bsp/ps7_cortexa9_1/libsrc/openamp_v1_4/build_openamp/lib/rpmsg/cmake_install.cmake")
+  include("C:/Users/tak/Desktop/ZYBO_Portable_Mandelbrot/project_1/project_1.sdk/fw_bm_mandelbrot_bsp/ps7_cortexa9_1/libsrc/openamp_v1_4/build_openamp/lib/remoteproc/cmake_install.cmake")
+  include("C:/Users/tak/Desktop/ZYBO_Portable_Mandelbrot/project_1/project_1.sdk/fw_bm_mandelbrot_bsp/ps7_cortexa9_1/libsrc/openamp_v1_4/build_openamp/lib/proxy/cmake_install.cmake")
 
 endif()
 

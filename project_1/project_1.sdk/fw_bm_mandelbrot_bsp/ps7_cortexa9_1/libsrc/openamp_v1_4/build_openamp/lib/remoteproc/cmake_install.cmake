@@ -1,4 +1,4 @@
-# Install script for directory: C:/asd/dev/zynq/vivado/project_1/project_1.sdk/fw_bm_mandelbrot_bsp/ps7_cortexa9_1/libsrc/openamp_v1_4/src/open-amp/lib/remoteproc
+# Install script for directory: C:/Users/tak/Desktop/ZYBO_Portable_Mandelbrot/project_1/project_1.sdk/fw_bm_mandelbrot_bsp/ps7_cortexa9_1/libsrc/openamp_v1_4/src/open-amp/lib/remoteproc
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -29,7 +29,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("C:/asd/dev/zynq/vivado/project_1/project_1.sdk/fw_bm_mandelbrot_bsp/ps7_cortexa9_1/libsrc/openamp_v1_4/build_openamp/lib/remoteproc/drivers/cmake_install.cmake")
+  include("C:/Users/tak/Desktop/ZYBO_Portable_Mandelbrot/project_1/project_1.sdk/fw_bm_mandelbrot_bsp/ps7_cortexa9_1/libsrc/openamp_v1_4/build_openamp/lib/remoteproc/drivers/cmake_install.cmake")
 
 endif()
 
