@@ -1,0 +1,41 @@
+{
+   ExpandedHierarchyInLayout: "",
+   guistr: "# # String gsaved with Nlview 6.6.11  2017-06-12 bk=1.3860 VDI=40 GEI=35 GUI=JA:1.6
+#  -string -flagsOSRD
+preplace port SYS_CLK_IN -pg 1 -y 60 -defaultsOSRD
+preplace port DDR -pg 1 -y 290 -defaultsOSRD
+preplace port TMDS_OUT -pg 1 -y 110 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -y 310 -defaultsOSRD
+preplace inst smartconnect_0 -pg 1 -lvl 4 -y 320 -defaultsOSRD
+preplace inst mandelbrot_0 -pg 1 -lvl 3 -y 320 -defaultsOSRD
+preplace inst xlconcat_0 -pg 1 -lvl 4 -y 170 -defaultsOSRD
+preplace inst axi_interconnect_0 -pg 1 -lvl 2 -y 250 -defaultsOSRD
+preplace inst hier_hdmi_out -pg 1 -lvl 3 -y 150 -defaultsOSRD
+preplace inst rst_ps7_0_100M -pg 1 -lvl 1 -y 460 -defaultsOSRD -orient R180
+preplace inst processing_system7_0 -pg 1 -lvl 5 -y 340 -defaultsOSRD
+preplace netloc processing_system7_0_DDR 1 5 1 NJ
+preplace netloc hier_hdmi_out_M_AXI_MM2S_VDMA 1 3 1 1180
+preplace netloc SYS_CLK_IN_0_1 1 0 3 -50J 50 NJ 50 670J
+preplace netloc hier_hdmi_out_mm2s_introut 1 3 1 NJ
+preplace netloc processing_system7_0_M_AXI_GP0 1 1 5 350J 30 NJ 30 NJ 30 NJ 30 1990
+preplace netloc rst_ps7_0_100M_peripheral_aresetn 1 0 3 -30 350 340 90 620
+preplace netloc axi_interconnect_0_M02_AXI 1 2 1 630
+preplace netloc ARESETN_1 1 0 4 -40 190 320J 40 NJ 40 1160J
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 1 5 N 480 NJ 480 NJ 480 NJ 480 1980
+preplace netloc hier_hdmi_out_TMDS_0 1 3 3 1170J 110 NJ 110 NJ
+preplace netloc smartconnect_0_M00_AXI 1 4 1 N
+preplace netloc mandelbrot_0_m_axi_gmem 1 3 1 N
+preplace netloc hier_hdmi_out_irq 1 3 1 NJ
+preplace netloc xlconcat_0_dout 1 4 1 1510
+preplace netloc MB_RESET_1 1 0 3 -50 70 NJ 70 660J
+preplace netloc processing_system7_0_FIXED_IO 1 5 1 NJ
+preplace netloc axi_interconnect_0_M00_AXI 1 2 1 650
+preplace netloc axi_interconnect_0_M01_AXI 1 2 1 630
+preplace netloc processing_system7_0_FCLK_CLK0 1 1 5 330 80 640 250 1190 240 1520 240 1980
+levelinfo -pg 1 -70 150 490 980 1370 1750 2020 -top -340 -bot 1140
+",
+}
+{
+   da_axi4_cnt: "6",
+   da_ps7_cnt: "1",
+}

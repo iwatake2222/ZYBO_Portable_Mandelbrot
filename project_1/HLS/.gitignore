@@ -1,0 +1,23 @@
+#########
+#Exclude all
+#########
+*
+
+!*/
+!.gitignore
+!*.cproject
+!*.app
+!*.tcl
+!*.aps
+!*.directive
+
+!*.c
+!*.h
+!*.cpp
+!*.hpp
+
+*csim/
+*impl/
+*syn/
+*.autopilot/
+

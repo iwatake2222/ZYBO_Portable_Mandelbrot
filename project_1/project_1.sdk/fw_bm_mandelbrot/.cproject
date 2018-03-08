@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?fileVersion 4.0.0?><cproject storage_type_id="org.eclipse.cdt.core.XmlProjectDescriptionStorage">
+	<storageModule moduleId="org.eclipse.cdt.core.settings">
+		<cconfiguration id="xilinx.gnu.armv7.exe.debug.2109190463">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="xilinx.gnu.armv7.exe.debug.2109190463" moduleId="org.eclipse.cdt.core.settings" name="Debug">
+				<externalSettings/>
+				<extensions>
+					<extension id="com.xilinx.sdk.managedbuilder.XELF.arm.a53.x32" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactExtension="elf" artifactName="${ProjName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe,org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.debug" cleanCommand="rm -rf" description="" id="xilinx.gnu.armv7.exe.debug.2109190463" name="Debug" parent="xilinx.gnu.armv7.exe.debug" prebuildStep="a9-linaro-pre-build-step">
+					<folderInfo id="xilinx.gnu.armv7.exe.debug.2109190463." name="/" resourcePath="">
+						<toolChain id="xilinx.gnu.armv7.exe.debug.toolchain.588435961" name="Xilinx ARM v7 GNU Toolchain" superClass="xilinx.gnu.armv7.exe.debug.toolchain">
+							<targetPlatform binaryParser="com.xilinx.sdk.managedbuilder.XELF.arm.a53.x32" id="xilinx.armv7.target.gnu.base.debug.493311261" isAbstract="false" name="Debug Platform" superClass="xilinx.armv7.target.gnu.base.debug"/>
+							<builder buildPath="${workspace_loc:/fw_bm_mandelbrot}/Debug" enableAutoBuild="true" id="xilinx.gnu.armv7.toolchain.builder.debug.1218069885" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="GNU make" superClass="xilinx.gnu.armv7.toolchain.builder.debug"/>
+							<tool id="xilinx.gnu.armv7.c.toolchain.assembler.debug.2085268249" name="ARM v7 gcc assembler" superClass="xilinx.gnu.armv7.c.toolchain.assembler.debug">
+								<inputType id="xilinx.gnu.assembler.input.1584942473" superClass="xilinx.gnu.assembler.input"/>
+							</tool>
+							<tool id="xilinx.gnu.armv7.c.toolchain.compiler.debug.1399580617" name="ARM v7 gcc compiler" superClass="xilinx.gnu.armv7.c.toolchain.compiler.debug">
+								<option defaultValue="gnu.c.optimization.level.none" id="xilinx.gnu.compiler.option.optimization.level.1311219755" name="Optimization Level" superClass="xilinx.gnu.compiler.option.optimization.level" valueType="enumerated"/>
+								<option id="xilinx.gnu.compiler.option.debugging.level.1779875849" name="Debug Level" superClass="xilinx.gnu.compiler.option.debugging.level" value="gnu.c.debugging.level.max" valueType="enumerated"/>
+								<option id="xilinx.gnu.compiler.inferred.swplatform.includes.2059994435" name="Software Platform Include Path" superClass="xilinx.gnu.compiler.inferred.swplatform.includes" valueType="includePath">
+									<listOptionValue builtIn="false" value="../../fw_bm_mandelbrot_bsp/ps7_cortexa9_1/include"/>
+								</option>
+								<option id="xilinx.gnu.compiler.inferred.swplatform.flags.275745566" name="Software Platform Inferred Flags" superClass="xilinx.gnu.compiler.inferred.swplatform.flags" value="  " valueType="string"/>
+								<option id="xilinx.gnu.compiler.misc.other.1100984400" name="Other flags" superClass="xilinx.gnu.compiler.misc.other" value="-c -fmessage-length=0 -MT&quot;$@&quot; -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard" valueType="string"/>
+								<option id="xilinx.gnu.compiler.dircategory.includes.1556820219" name="Include Paths" superClass="xilinx.gnu.compiler.dircategory.includes" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/fw_bm_mandelbrot/src/Libs/jpeg-9c}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/fw_bm_mandelbrot/src/Utility}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/fw_bm_mandelbrot/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/fw_bm_mandelbrot_bsp/ps7_cortexa9_1/include}&quot;"/>
+								</option>
+								<inputType id="xilinx.gnu.armv7.c.compiler.input.661853467" name="C source files" superClass="xilinx.gnu.armv7.c.compiler.input"/>
+							</tool>
+							<tool id="xilinx.gnu.armv7.cxx.toolchain.compiler.debug.1265519781" name="ARM v7 g++ compiler" superClass="xilinx.gnu.armv7.cxx.toolchain.compiler.debug">
+								<option defaultValue="gnu.c.optimization.level.none" id="xilinx.gnu.compiler.option.optimization.level.864115689" name="Optimization Level" superClass="xilinx.gnu.compiler.option.optimization.level" valueType="enumerated"/>
+								<option id="xilinx.gnu.compiler.option.debugging.level.1741199426" name="Debug Level" superClass="xilinx.gnu.compiler.option.debugging.level" value="gnu.c.debugging.level.max" valueType="enumerated"/>
+								<option id="xilinx.gnu.compiler.inferred.swplatform.includes.1503989553" name="Software Platform Include Path" superClass="xilinx.gnu.compiler.inferred.swplatform.includes" valueType="includePath">
+									<listOptionValue builtIn="false" value="../../fw_bm_mandelbrot_bsp/ps7_cortexa9_1/include"/>
+								</option>
+								<option id="xilinx.gnu.compiler.inferred.swplatform.flags.857236201" name="Software Platform Inferred Flags" superClass="xilinx.gnu.compiler.inferred.swplatform.flags" value="  " valueType="string"/>
+								<option id="xilinx.gnu.compiler.dircategory.includes.37595459" name="Include Paths" superClass="xilinx.gnu.compiler.dircategory.includes" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src/DebugMonitor}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src/JpegCtrl}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src/Libs/jpeg-9c}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src/MandelbrotCtrl}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src/ServerIF}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src/Utility}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src/VideoCtrl}&quot;"/>
+								</option>
+							</tool>
+							<tool id="xilinx.gnu.armv7.toolchain.archiver.690000802" name="ARM v7 archiver" superClass="xilinx.gnu.armv7.toolchain.archiver"/>
+							<tool command="arm-none-eabi-g++" id="xilinx.gnu.armv7.c.toolchain.linker.debug.1126113747" name="ARM v7 gcc linker" superClass="xilinx.gnu.armv7.c.toolchain.linker.debug">
+								<option id="xilinx.gnu.linker.inferred.swplatform.lpath.13067969" name="Software Platform Library Path" superClass="xilinx.gnu.linker.inferred.swplatform.lpath" valueType="libPaths">
+									<listOptionValue builtIn="false" value="../../fw_bm_mandelbrot_bsp/ps7_cortexa9_1/lib"/>
+								</option>
+								<option id="xilinx.gnu.linker.inferred.swplatform.flags.558225342" name="Software Platform Inferred Flags" superClass="xilinx.gnu.linker.inferred.swplatform.flags" valueType="libs">
+									<listOptionValue builtIn="false" value="-Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group"/>
+									<listOptionValue builtIn="false" value="-Wl,--start-group,-lxil,-lmetal,-lopen_amp,-lgcc,-lc,--end-group"/>
+									<listOptionValue builtIn="false" value="-Wl,--start-group,-lxil,-lmetal,-lgcc,-lc,--end-group"/>
+								</option>
+								<option id="xilinx.gnu.c.linker.option.lscript.1913969950" name="Linker Script" superClass="xilinx.gnu.c.linker.option.lscript" value="../src/lscript.ld" valueType="string"/>
+								<option id="xilinx.gnu.c.link.option.ldflags.665450516" name="Linker Flags" superClass="xilinx.gnu.c.link.option.ldflags" value=" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec" valueType="string"/>
+								<inputType id="xilinx.gnu.linker.input.701081444" superClass="xilinx.gnu.linker.input">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+								</inputType>
+								<inputType id="xilinx.gnu.linker.input.lscript.485040550" name="Linker Script" superClass="xilinx.gnu.linker.input.lscript"/>
+							</tool>
+							<tool id="xilinx.gnu.armv7.cxx.toolchain.linker.debug.249839768" name="ARM v7 g++ linker" superClass="xilinx.gnu.armv7.cxx.toolchain.linker.debug">
+								<option id="xilinx.gnu.linker.inferred.swplatform.lpath.2098010847" name="Software Platform Library Path" superClass="xilinx.gnu.linker.inferred.swplatform.lpath" valueType="libPaths">
+									<listOptionValue builtIn="false" value="../../fw_bm_mandelbrot_bsp/ps7_cortexa9_1/lib"/>
+								</option>
+								<option id="xilinx.gnu.linker.inferred.swplatform.flags.1972693796" name="Software Platform Inferred Flags" superClass="xilinx.gnu.linker.inferred.swplatform.flags" valueType="libs">
+									<listOptionValue builtIn="false" value="-Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group"/>
+									<listOptionValue builtIn="false" value="-Wl,--start-group,-lxil,-lmetal,-lopen_amp,-lgcc,-lc,--end-group"/>
+									<listOptionValue builtIn="false" value="-Wl,--start-group,-lxil,-lmetal,-lgcc,-lc,--end-group"/>
+								</option>
+								<option id="xilinx.gnu.c.linker.option.lscript.659460718" name="Linker Script" superClass="xilinx.gnu.c.linker.option.lscript" value="../src/lscript.ld" valueType="string"/>
+							</tool>
+							<tool id="xilinx.gnu.armv7.size.debug.148601141" name="ARM v7 Print Size" superClass="xilinx.gnu.armv7.size.debug"/>
+						</toolChain>
+					</folderInfo>
+					<fileInfo id="xilinx.gnu.armv7.exe.debug.2109190463.580150499" name="bufferMgrInstance.cpp" rcbsApplicability="disable" resourcePath="src/Utility/bufferMgrInstance.cpp" toolsToInvoke="xilinx.gnu.armv7.cxx.compiler.1386142707">
+						<tool command="arm-none-eabi-g++ -Wall -O0 -g3 -I../../fw_bm_mandelbrot_bsp/ps7_cortexa9_1/include -I&quot;C:\asd\dev\zynq\vivado\project_1\project_1.sdk\fw_bm_mandelbrot\src\DebugMonitor&quot; -I&quot;C:\asd\dev\zynq\vivado\project_1\project_1.sdk\fw_bm_mandelbrot\src\JpegCtrl&quot; -I&quot;C:\asd\dev\zynq\vivado\project_1\project_1.sdk\fw_bm_mandelbrot\src\Libs\jpeg-9c&quot; -I&quot;C:\asd\dev\zynq\vivado\project_1\project_1.sdk\fw_bm_mandelbrot\src\MandelbrotCtrl&quot; -I&quot;C:\asd\dev\zynq\vivado\project_1\project_1.sdk\fw_bm_mandelbrot\src\ServerIF&quot; -I&quot;C:\asd\dev\zynq\vivado\project_1\project_1.sdk\fw_bm_mandelbrot\src\Utility&quot; -I&quot;C:\asd\dev\zynq\vivado\project_1\project_1.sdk\fw_bm_mandelbrot\src\VideoCtrl&quot; -I&quot;C:\asd\dev\zynq\vivado\project_1\project_1.sdk\fw_bm_mandelbrot\src&quot; -c -fmessage-length=0 -MT&quot;$@&quot; -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard" id="xilinx.gnu.armv7.cxx.compiler.1386142707" name="ARM v7 g++ compiler" superClass="xilinx.gnu.armv7.cxx.compiler">
+							<option defaultValue="gnu.c.optimization.level.none" id="xilinx.gnu.compiler.option.optimization.level.1185939891" name="Optimization Level" superClass="xilinx.gnu.compiler.option.optimization.level" valueType="enumerated"/>
+							<option id="xilinx.gnu.compiler.option.debugging.level.76106649" name="Debug Level" superClass="xilinx.gnu.compiler.option.debugging.level" value="gnu.c.debugging.level.max" valueType="enumerated"/>
+							<option id="xilinx.gnu.compiler.dircategory.includes.413658699" name="Include Paths" superClass="xilinx.gnu.compiler.dircategory.includes" valueType="includePath">
+								<listOptionValue builtIn="false" value="&quot;${workspace_loc:/fw_bm_mandelbrot/src/Libs/jpeg-9c}&quot;"/>
+								<listOptionValue builtIn="false" value="&quot;${workspace_loc:/fw_bm_mandelbrot/src/Utility}&quot;"/>
+								<listOptionValue builtIn="false" value="&quot;${workspace_loc:/fw_bm_mandelbrot/src}&quot;"/>
+								<listOptionValue builtIn="false" value="&quot;${workspace_loc:/fw_bm_mandelbrot_bsp/ps7_cortexa9_1/include}&quot;"/>
+							</option>
+							<option id="xilinx.gnu.compiler.misc.other.121658348" name="Other flags" superClass="xilinx.gnu.compiler.misc.other" value="-c -fmessage-length=0 -MT&quot;$@&quot; -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard" valueType="string"/>
+							<inputType id="xilinx.gnu.armv7.cxx.compiler.input.1929302886" name="C++ source files" superClass="xilinx.gnu.armv7.cxx.compiler.input"/>
+						</tool>
+					</fileInfo>
+					<fileInfo id="xilinx.gnu.armv7.exe.debug.2109190463.1642750750" name="bufferMgr.cpp" rcbsApplicability="disable" resourcePath="src/Utility/bufferMgr.cpp" toolsToInvoke="xilinx.gnu.armv7.cxx.compiler.1826068400">
+						<tool command="arm-none-eabi-g++ -Wall -O0 -g3 -I../../fw_bm_mandelbrot_bsp/ps7_cortexa9_1/include -I&quot;C:\asd\dev\zynq\vivado\project_1\project_1.sdk\fw_bm_mandelbrot\src\DebugMonitor&quot; -I&quot;C:\asd\dev\zynq\vivado\project_1\project_1.sdk\fw_bm_mandelbrot\src\JpegCtrl&quot; -I&quot;C:\asd\dev\zynq\vivado\project_1\project_1.sdk\fw_bm_mandelbrot\src\Libs\jpeg-9c&quot; -I&quot;C:\asd\dev\zynq\vivado\project_1\project_1.sdk\fw_bm_mandelbrot\src\MandelbrotCtrl&quot; -I&quot;C:\asd\dev\zynq\vivado\project_1\project_1.sdk\fw_bm_mandelbrot\src\ServerIF&quot; -I&quot;C:\asd\dev\zynq\vivado\project_1\project_1.sdk\fw_bm_mandelbrot\src\Utility&quot; -I&quot;C:\asd\dev\zynq\vivado\project_1\project_1.sdk\fw_bm_mandelbrot\src\VideoCtrl&quot; -I&quot;C:\asd\dev\zynq\vivado\project_1\project_1.sdk\fw_bm_mandelbrot\src&quot; -c -fmessage-length=0 -MT&quot;$@&quot; -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard" id="xilinx.gnu.armv7.cxx.compiler.1826068400" name="ARM v7 g++ compiler" superClass="xilinx.gnu.armv7.cxx.compiler">
+							<option defaultValue="gnu.c.optimization.level.none" id="xilinx.gnu.compiler.option.optimization.level.1995823651" name="Optimization Level" superClass="xilinx.gnu.compiler.option.optimization.level" valueType="enumerated"/>
+							<option id="xilinx.gnu.compiler.option.debugging.level.223943097" name="Debug Level" superClass="xilinx.gnu.compiler.option.debugging.level" value="gnu.c.debugging.level.max" valueType="enumerated"/>
+							<option id="xilinx.gnu.compiler.misc.other.48987537" name="Other flags" superClass="xilinx.gnu.compiler.misc.other" value="-c -fmessage-length=0 -MT&quot;$@&quot; -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard" valueType="string"/>
+							<option id="xilinx.gnu.compiler.dircategory.includes.370866782" name="Include Paths" superClass="xilinx.gnu.compiler.dircategory.includes" valueType="includePath">
+								<listOptionValue builtIn="false" value="&quot;${workspace_loc:/fw_bm_mandelbrot/src/Libs/jpeg-9c}&quot;"/>
+								<listOptionValue builtIn="false" value="&quot;${workspace_loc:/fw_bm_mandelbrot/src/Utility}&quot;"/>
+								<listOptionValue builtIn="false" value="&quot;${workspace_loc:/fw_bm_mandelbrot/src}&quot;"/>
+								<listOptionValue builtIn="false" value="&quot;${workspace_loc:/fw_bm_mandelbrot_bsp/ps7_cortexa9_1/include}&quot;"/>
+							</option>
+							<inputType id="xilinx.gnu.armv7.cxx.compiler.input.1061714137" name="C++ source files" superClass="xilinx.gnu.armv7.cxx.compiler.input"/>
+						</tool>
+						<tool customBuildStep="true" id="org.eclipse.cdt.managedbuilder.ui.rcbs.1123185044" name="Resource Custom Build Step">
+							<inputType id="org.eclipse.cdt.managedbuilder.ui.rcbs.inputtype.1119087991" name="Resource Custom Build Step Input Type">
+								<additionalInput kind="additionalinputdependency" paths=""/>
+							</inputType>
+							<outputType id="org.eclipse.cdt.managedbuilder.ui.rcbs.outputtype.1443077913" name="Resource Custom Build Step Output Type"/>
+						</tool>
+					</fileInfo>
+					<fileInfo id="xilinx.gnu.armv7.exe.debug.2109190463.1753616730" name="jpegCtrl.cpp" rcbsApplicability="disable" resourcePath="src/JpegCtrl/jpegCtrl.cpp" toolsToInvoke="xilinx.gnu.armv7.cxx.compiler.1425013019">
+						<tool id="xilinx.gnu.armv7.cxx.compiler.1425013019" name="ARM v7 g++ compiler" superClass="xilinx.gnu.armv7.cxx.compiler">
+							<option defaultValue="gnu.c.optimization.level.none" id="xilinx.gnu.compiler.option.optimization.level.2010166835" name="Optimization Level" superClass="xilinx.gnu.compiler.option.optimization.level" valueType="enumerated"/>
+							<option id="xilinx.gnu.compiler.option.debugging.level.512617341" name="Debug Level" superClass="xilinx.gnu.compiler.option.debugging.level" value="gnu.c.debugging.level.max" valueType="enumerated"/>
+							<option id="xilinx.gnu.compiler.dircategory.includes.2087113957" name="Include Paths" superClass="xilinx.gnu.compiler.dircategory.includes" valueType="includePath">
+								<listOptionValue builtIn="false" value="&quot;${workspace_loc:/fw_bm_mandelbrot/src/Libs/jpeg-9c}&quot;"/>
+								<listOptionValue builtIn="false" value="&quot;${workspace_loc:/fw_bm_mandelbrot/src/Utility}&quot;"/>
+								<listOptionValue builtIn="false" value="&quot;${workspace_loc:/fw_bm_mandelbrot/src}&quot;"/>
+								<listOptionValue builtIn="false" value="&quot;${workspace_loc:/fw_bm_mandelbrot_bsp/ps7_cortexa9_1/include}&quot;"/>
+							</option>
+							<option id="xilinx.gnu.compiler.misc.other.540607505" name="Other flags" superClass="xilinx.gnu.compiler.misc.other" value="-c -fmessage-length=0 -MT&quot;$@&quot; -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard" valueType="string"/>
+							<inputType id="xilinx.gnu.armv7.cxx.compiler.input.1151073541" name="C++ source files" superClass="xilinx.gnu.armv7.cxx.compiler.input"/>
+						</tool>
+					</fileInfo>
+					<fileInfo id="xilinx.gnu.armv7.exe.debug.2109190463.1365121064" name="mandelbrotCtrl.cpp" rcbsApplicability="disable" resourcePath="src/MandelbrotCtrl/mandelbrotCtrl.cpp" toolsToInvoke="xilinx.gnu.armv7.cxx.compiler.295806630">
+						<tool id="xilinx.gnu.armv7.cxx.compiler.295806630" name="ARM v7 g++ compiler" superClass="xilinx.gnu.armv7.cxx.compiler">
+							<option defaultValue="gnu.c.optimization.level.none" id="xilinx.gnu.compiler.option.optimization.level.830742716" name="Optimization Level" superClass="xilinx.gnu.compiler.option.optimization.level" valueType="enumerated"/>
+							<option id="xilinx.gnu.compiler.option.debugging.level.621676733" name="Debug Level" superClass="xilinx.gnu.compiler.option.debugging.level" value="gnu.c.debugging.level.max" valueType="enumerated"/>
+							<option id="xilinx.gnu.compiler.dircategory.includes.1891315062" name="Include Paths" superClass="xilinx.gnu.compiler.dircategory.includes" valueType="includePath">
+								<listOptionValue builtIn="false" value="&quot;${workspace_loc:/fw_bm_mandelbrot/src/Libs/jpeg-9c}&quot;"/>
+								<listOptionValue builtIn="false" value="&quot;${workspace_loc:/fw_bm_mandelbrot/src/Utility}&quot;"/>
+								<listOptionValue builtIn="false" value="&quot;${workspace_loc:/fw_bm_mandelbrot/src}&quot;"/>
+								<listOptionValue builtIn="false" value="&quot;${workspace_loc:/fw_bm_mandelbrot_bsp/ps7_cortexa9_1/include}&quot;"/>
+							</option>
+							<option id="xilinx.gnu.compiler.misc.other.967679524" name="Other flags" superClass="xilinx.gnu.compiler.misc.other" value="-c -fmessage-length=0 -MT&quot;$@&quot; -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard" valueType="string"/>
+							<inputType id="xilinx.gnu.armv7.cxx.compiler.input.718039231" name="C++ source files" superClass="xilinx.gnu.armv7.cxx.compiler.input"/>
+						</tool>
+					</fileInfo>
+					<fileInfo id="xilinx.gnu.armv7.exe.debug.2109190463.1069680859" name="debugMonitor.cpp" rcbsApplicability="disable" resourcePath="src/DebugMonitor/debugMonitor.cpp" toolsToInvoke="xilinx.gnu.armv7.cxx.compiler.2034894900">
+						<tool id="xilinx.gnu.armv7.cxx.compiler.2034894900" name="ARM v7 g++ compiler" superClass="xilinx.gnu.armv7.cxx.compiler">
+							<option defaultValue="gnu.c.optimization.level.none" id="xilinx.gnu.compiler.option.optimization.level.188800254" name="Optimization Level" superClass="xilinx.gnu.compiler.option.optimization.level" valueType="enumerated"/>
+							<option id="xilinx.gnu.compiler.option.debugging.level.1951947212" name="Debug Level" superClass="xilinx.gnu.compiler.option.debugging.level" value="gnu.c.debugging.level.max" valueType="enumerated"/>
+							<option id="xilinx.gnu.compiler.dircategory.includes.1627630310" name="Include Paths" superClass="xilinx.gnu.compiler.dircategory.includes" valueType="includePath">
+								<listOptionValue builtIn="false" value="&quot;${workspace_loc:/fw_bm_mandelbrot/src/Libs/jpeg-9c}&quot;"/>
+								<listOptionValue builtIn="false" value="&quot;${workspace_loc:/fw_bm_mandelbrot/src/Utility}&quot;"/>
+								<listOptionValue builtIn="false" value="&quot;${workspace_loc:/fw_bm_mandelbrot/src}&quot;"/>
+								<listOptionValue builtIn="false" value="&quot;${workspace_loc:/fw_bm_mandelbrot_bsp/ps7_cortexa9_1/include}&quot;"/>
+							</option>
+							<option id="xilinx.gnu.compiler.misc.other.2071363215" name="Other flags" superClass="xilinx.gnu.compiler.misc.other" value="-c -fmessage-length=0 -MT&quot;$@&quot; -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard" valueType="string"/>
+							<inputType id="xilinx.gnu.armv7.cxx.compiler.input.1887634154" name="C++ source files" superClass="xilinx.gnu.armv7.cxx.compiler.input"/>
+						</tool>
+					</fileInfo>
+					<fileInfo id="xilinx.gnu.armv7.exe.debug.2109190463.1729504391" name="videoCtrl.cpp" rcbsApplicability="disable" resourcePath="src/VideoCtrl/videoCtrl.cpp" toolsToInvoke="xilinx.gnu.armv7.cxx.compiler.564881550">
+						<tool id="xilinx.gnu.armv7.cxx.compiler.564881550" name="ARM v7 g++ compiler" superClass="xilinx.gnu.armv7.cxx.compiler">
+							<option defaultValue="gnu.c.optimization.level.none" id="xilinx.gnu.compiler.option.optimization.level.2082305117" name="Optimization Level" superClass="xilinx.gnu.compiler.option.optimization.level" valueType="enumerated"/>
+							<option id="xilinx.gnu.compiler.option.debugging.level.1487179732" name="Debug Level" superClass="xilinx.gnu.compiler.option.debugging.level" value="gnu.c.debugging.level.max" valueType="enumerated"/>
+							<option id="xilinx.gnu.compiler.misc.other.444161667" name="Other flags" superClass="xilinx.gnu.compiler.misc.other" value="-c -fmessage-length=0 -MT&quot;$@&quot; -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard" valueType="string"/>
+							<option id="xilinx.gnu.compiler.dircategory.includes.2025199510" name="Include Paths" superClass="xilinx.gnu.compiler.dircategory.includes" valueType="includePath">
+								<listOptionValue builtIn="false" value="&quot;${workspace_loc:/fw_bm_mandelbrot/src/Utility}&quot;"/>
+								<listOptionValue builtIn="false" value="&quot;${workspace_loc:/fw_bm_mandelbrot/src}&quot;"/>
+								<listOptionValue builtIn="false" value="&quot;${workspace_loc:/fw_bm_mandelbrot_bsp/ps7_cortexa9_1/include}&quot;"/>
+							</option>
+							<inputType id="xilinx.gnu.armv7.cxx.compiler.input.1192854671" name="C++ source files" superClass="xilinx.gnu.armv7.cxx.compiler.input"/>
+						</tool>
+					</fileInfo>
+					<fileInfo id="xilinx.gnu.armv7.exe.debug.2109190463.845597109" name="rsc_table.h" rcbsApplicability="disable" resourcePath="src/ServerIF/OpenAmp/rsc_table.h" toolsToInvoke=""/>
+					<fileInfo id="xilinx.gnu.armv7.exe.debug.2109190463.1014899587" name="platform_info.h" rcbsApplicability="disable" resourcePath="src/ServerIF/OpenAmp/platform_info.h" toolsToInvoke=""/>
+					<fileInfo id="xilinx.gnu.armv7.exe.debug.2109190463.1560754238" name="serverIf.cpp" rcbsApplicability="disable" resourcePath="src/ServerIF/serverIf.cpp" toolsToInvoke="xilinx.gnu.armv7.cxx.compiler.668206411">
+						<tool id="xilinx.gnu.armv7.cxx.compiler.668206411" name="ARM v7 g++ compiler" superClass="xilinx.gnu.armv7.cxx.compiler">
+							<option defaultValue="gnu.c.optimization.level.none" id="xilinx.gnu.compiler.option.optimization.level.182864986" name="Optimization Level" superClass="xilinx.gnu.compiler.option.optimization.level" valueType="enumerated"/>
+							<option id="xilinx.gnu.compiler.option.debugging.level.1599650" name="Debug Level" superClass="xilinx.gnu.compiler.option.debugging.level" value="gnu.c.debugging.level.max" valueType="enumerated"/>
+							<option id="xilinx.gnu.compiler.dircategory.includes.1476684366" name="Include Paths" superClass="xilinx.gnu.compiler.dircategory.includes" valueType="includePath">
+								<listOptionValue builtIn="false" value="&quot;${workspace_loc:/fw_bm_mandelbrot/src/Libs/jpeg-9c}&quot;"/>
+								<listOptionValue builtIn="false" value="&quot;${workspace_loc:/fw_bm_mandelbrot/src/Utility}&quot;"/>
+								<listOptionValue builtIn="false" value="&quot;${workspace_loc:/fw_bm_mandelbrot/src}&quot;"/>
+								<listOptionValue builtIn="false" value="&quot;${workspace_loc:/fw_bm_mandelbrot_bsp/ps7_cortexa9_1/include}&quot;"/>
+							</option>
+							<option id="xilinx.gnu.compiler.misc.other.673041200" name="Other flags" superClass="xilinx.gnu.compiler.misc.other" value="-c -fmessage-length=0 -MT&quot;$@&quot; -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard" valueType="string"/>
+							<inputType id="xilinx.gnu.armv7.cxx.compiler.input.532696575" name="C++ source files" superClass="xilinx.gnu.armv7.cxx.compiler.input"/>
+						</tool>
+					</fileInfo>
+					<sourceEntries>
+						<entry excluding="src/ServerIF/OpenAmp/echo_test.c|src/system_helper.c|src/rsc_table.h|src/rsc_table.c|src/helper.c|src/echo_test.c" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+					</sourceEntries>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+			<storageModule moduleId="ilg.gnuarmeclipse.managedbuild.packs"/>
+		</cconfiguration>
+		<cconfiguration id="xilinx.gnu.armv7.exe.release.943093325">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="xilinx.gnu.armv7.exe.release.943093325" moduleId="org.eclipse.cdt.core.settings" name="Release">
+				<externalSettings/>
+				<extensions>
+					<extension id="com.xilinx.sdk.managedbuilder.XELF.arm.a53.x32" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactExtension="elf" artifactName="${ProjName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe,org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.release" cleanCommand="rm -rf" description="" id="xilinx.gnu.armv7.exe.release.943093325" name="Release" parent="xilinx.gnu.armv7.exe.release" prebuildStep="a9-linaro-pre-build-step">
+					<folderInfo id="xilinx.gnu.armv7.exe.release.943093325." name="/" resourcePath="">
+						<toolChain id="xilinx.gnu.armv7.exe.release.toolchain.193196363" name="Xilinx ARM v7 GNU Toolchain" superClass="xilinx.gnu.armv7.exe.release.toolchain">
+							<targetPlatform binaryParser="com.xilinx.sdk.managedbuilder.XELF.arm.a53.x32" id="xilinx.armv7.target.gnu.base.release.691390149" isAbstract="false" name="Release Platform" superClass="xilinx.armv7.target.gnu.base.release"/>
+							<builder buildPath="${workspace_loc:/fw_bm_mandelbrot}/Release" enableAutoBuild="true" id="xilinx.gnu.armv7.toolchain.builder.release.57058748" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="GNU make" superClass="xilinx.gnu.armv7.toolchain.builder.release"/>
+							<tool id="xilinx.gnu.armv7.c.toolchain.assembler.release.1909536847" name="ARM v7 gcc assembler" superClass="xilinx.gnu.armv7.c.toolchain.assembler.release">
+								<inputType id="xilinx.gnu.assembler.input.1818281739" superClass="xilinx.gnu.assembler.input"/>
+							</tool>
+							<tool id="xilinx.gnu.armv7.c.toolchain.compiler.release.5392610" name="ARM v7 gcc compiler" superClass="xilinx.gnu.armv7.c.toolchain.compiler.release">
+								<option defaultValue="gnu.c.optimization.level.more" id="xilinx.gnu.compiler.option.optimization.level.953562722" name="Optimization Level" superClass="xilinx.gnu.compiler.option.optimization.level" valueType="enumerated"/>
+								<option id="xilinx.gnu.compiler.option.debugging.level.317420739" name="Debug Level" superClass="xilinx.gnu.compiler.option.debugging.level" value="gnu.c.debugging.level.none" valueType="enumerated"/>
+								<option id="xilinx.gnu.compiler.inferred.swplatform.includes.747549073" name="Software Platform Include Path" superClass="xilinx.gnu.compiler.inferred.swplatform.includes" valueType="includePath">
+									<listOptionValue builtIn="false" value="../../fw_bm_mandelbrot_bsp/ps7_cortexa9_1/include"/>
+								</option>
+								<option id="xilinx.gnu.compiler.inferred.swplatform.flags.183598434" name="Software Platform Inferred Flags" superClass="xilinx.gnu.compiler.inferred.swplatform.flags" value="  " valueType="string"/>
+								<option id="xilinx.gnu.compiler.misc.other.942637752" name="Other flags" superClass="xilinx.gnu.compiler.misc.other" value="-c -fmessage-length=0 -MT&quot;$@&quot; -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard" valueType="string"/>
+								<option id="xilinx.gnu.compiler.dircategory.includes.671728499" name="Include Paths" superClass="xilinx.gnu.compiler.dircategory.includes" valueType="includePath">
+									<listOptionValue builtIn="false" value="../../fw_bm_mandelbrot_bsp/ps7_cortexa9_1/include"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/fw_bm_mandelbrot/src/DebugMonitor}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/fw_bm_mandelbrot/src/JpegCtrl}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/fw_bm_mandelbrot/src/Libs/jpeg-9c}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/fw_bm_mandelbrot/src/MandelbrotCtrl}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/fw_bm_mandelbrot/src/ServerIF}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/fw_bm_mandelbrot/src/Utility}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/fw_bm_mandelbrot/src/VideoCtrl}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/fw_bm_mandelbrot/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/fw_bm_mandelbrot_bsp/ps7_cortexa9_1/include}&quot;"/>
+								</option>
+								<inputType id="xilinx.gnu.armv7.c.compiler.input.452471526" name="C source files" superClass="xilinx.gnu.armv7.c.compiler.input"/>
+							</tool>
+							<tool id="xilinx.gnu.armv7.cxx.toolchain.compiler.release.949092689" name="ARM v7 g++ compiler" superClass="xilinx.gnu.armv7.cxx.toolchain.compiler.release">
+								<option defaultValue="gnu.c.optimization.level.more" id="xilinx.gnu.compiler.option.optimization.level.1205093621" name="Optimization Level" superClass="xilinx.gnu.compiler.option.optimization.level" valueType="enumerated"/>
+								<option id="xilinx.gnu.compiler.option.debugging.level.1153405671" name="Debug Level" superClass="xilinx.gnu.compiler.option.debugging.level" value="gnu.c.debugging.level.none" valueType="enumerated"/>
+								<option id="xilinx.gnu.compiler.inferred.swplatform.includes.1568987699" name="Software Platform Include Path" superClass="xilinx.gnu.compiler.inferred.swplatform.includes" valueType="includePath">
+									<listOptionValue builtIn="false" value="../../fw_bm_mandelbrot_bsp/ps7_cortexa9_1/include"/>
+								</option>
+								<option id="xilinx.gnu.compiler.inferred.swplatform.flags.1938604279" name="Software Platform Inferred Flags" superClass="xilinx.gnu.compiler.inferred.swplatform.flags" value="  " valueType="string"/>
+								<option id="xilinx.gnu.compiler.dircategory.includes.197332838" name="Include Paths" superClass="xilinx.gnu.compiler.dircategory.includes" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src/DebugMonitor}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src/JpegCtrl}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src/Libs/jpeg-9c}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src/MandelbrotCtrl}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src/ServerIF}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src/Utility}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src/VideoCtrl}&quot;"/>
+								</option>
+							</tool>
+							<tool id="xilinx.gnu.armv7.toolchain.archiver.1345396066" name="ARM v7 archiver" superClass="xilinx.gnu.armv7.toolchain.archiver"/>
+							<tool command="arm-none-eabi-g++" id="xilinx.gnu.armv7.c.toolchain.linker.release.203428298" name="ARM v7 gcc linker" superClass="xilinx.gnu.armv7.c.toolchain.linker.release">
+								<option id="xilinx.gnu.linker.inferred.swplatform.lpath.563183034" name="Software Platform Library Path" superClass="xilinx.gnu.linker.inferred.swplatform.lpath" valueType="libPaths">
+									<listOptionValue builtIn="false" value="../../fw_bm_mandelbrot_bsp/ps7_cortexa9_1/lib"/>
+								</option>
+								<option id="xilinx.gnu.linker.inferred.swplatform.flags.246305721" name="Software Platform Inferred Flags" superClass="xilinx.gnu.linker.inferred.swplatform.flags" valueType="libs">
+									<listOptionValue builtIn="false" value="-Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group"/>
+									<listOptionValue builtIn="false" value="-Wl,--start-group,-lxil,-lmetal,-lopen_amp,-lgcc,-lc,--end-group"/>
+									<listOptionValue builtIn="false" value="-Wl,--start-group,-lxil,-lmetal,-lgcc,-lc,--end-group"/>
+								</option>
+								<option id="xilinx.gnu.c.linker.option.lscript.894666437" name="Linker Script" superClass="xilinx.gnu.c.linker.option.lscript" value="../src/lscript.ld" valueType="string"/>
+								<option id="xilinx.gnu.c.link.option.ldflags.1671284901" name="Linker Flags" superClass="xilinx.gnu.c.link.option.ldflags" value=" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec" valueType="string"/>
+								<inputType id="xilinx.gnu.linker.input.1893620173" superClass="xilinx.gnu.linker.input">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+								</inputType>
+								<inputType id="xilinx.gnu.linker.input.lscript.723624195" name="Linker Script" superClass="xilinx.gnu.linker.input.lscript"/>
+							</tool>
+							<tool id="xilinx.gnu.armv7.cxx.toolchain.linker.release.2144815310" name="ARM v7 g++ linker" superClass="xilinx.gnu.armv7.cxx.toolchain.linker.release">
+								<option id="xilinx.gnu.linker.inferred.swplatform.lpath.907472943" name="Software Platform Library Path" superClass="xilinx.gnu.linker.inferred.swplatform.lpath" valueType="libPaths">
+									<listOptionValue builtIn="false" value="../../fw_bm_mandelbrot_bsp/ps7_cortexa9_1/lib"/>
+								</option>
+								<option id="xilinx.gnu.linker.inferred.swplatform.flags.1497785899" name="Software Platform Inferred Flags" superClass="xilinx.gnu.linker.inferred.swplatform.flags" valueType="libs">
+									<listOptionValue builtIn="false" value="-Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group"/>
+									<listOptionValue builtIn="false" value="-Wl,--start-group,-lxil,-lmetal,-lopen_amp,-lgcc,-lc,--end-group"/>
+									<listOptionValue builtIn="false" value="-Wl,--start-group,-lxil,-lmetal,-lgcc,-lc,--end-group"/>
+								</option>
+								<option id="xilinx.gnu.c.linker.option.lscript.977630889" name="Linker Script" superClass="xilinx.gnu.c.linker.option.lscript" value="../src/lscript.ld" valueType="string"/>
+							</tool>
+							<tool id="xilinx.gnu.armv7.size.release.305412967" name="ARM v7 Print Size" superClass="xilinx.gnu.armv7.size.release"/>
+						</toolChain>
+					</folderInfo>
+					<fileInfo id="xilinx.gnu.armv7.exe.release.943093325.1174722180" name="bufferMgrInstance.cpp" rcbsApplicability="disable" resourcePath="src/Utility/bufferMgrInstance.cpp" toolsToInvoke="xilinx.gnu.armv7.cxx.compiler.1580071533">
+						<tool id="xilinx.gnu.armv7.cxx.compiler.1580071533" name="ARM v7 g++ compiler" superClass="xilinx.gnu.armv7.cxx.compiler">
+							<option defaultValue="gnu.c.optimization.level.more" id="xilinx.gnu.compiler.option.optimization.level.334412657" name="Optimization Level" superClass="xilinx.gnu.compiler.option.optimization.level" valueType="enumerated"/>
+							<option id="xilinx.gnu.compiler.option.debugging.level.925035254" name="Debug Level" superClass="xilinx.gnu.compiler.option.debugging.level" value="gnu.c.debugging.level.none" valueType="enumerated"/>
+							<option id="xilinx.gnu.compiler.misc.other.169128481" name="Other flags" superClass="xilinx.gnu.compiler.misc.other" value="-c -fmessage-length=0 -MT&quot;$@&quot; -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard" valueType="string"/>
+							<option id="xilinx.gnu.compiler.dircategory.includes.283471867" name="Include Paths" superClass="xilinx.gnu.compiler.dircategory.includes" valueType="includePath">
+								<listOptionValue builtIn="false" value="&quot;${workspace_loc:/fw_bm_mandelbrot/src}&quot;"/>
+								<listOptionValue builtIn="false" value="&quot;${workspace_loc:/fw_bm_mandelbrot/src/Utility}&quot;"/>
+								<listOptionValue builtIn="false" value="&quot;${workspace_loc:/fw_bm_mandelbrot_bsp/ps7_cortexa9_1/include}&quot;"/>
+							</option>
+							<inputType id="xilinx.gnu.armv7.cxx.compiler.input.1501699172" name="C++ source files" superClass="xilinx.gnu.armv7.cxx.compiler.input"/>
+						</tool>
+					</fileInfo>
+					<fileInfo id="xilinx.gnu.armv7.exe.release.943093325.188049260" name="bufferMgr.cpp" rcbsApplicability="disable" resourcePath="src/Utility/bufferMgr.cpp" toolsToInvoke="xilinx.gnu.armv7.cxx.compiler.148670005">
+						<tool id="xilinx.gnu.armv7.cxx.compiler.148670005" name="ARM v7 g++ compiler" superClass="xilinx.gnu.armv7.cxx.compiler">
+							<option defaultValue="gnu.c.optimization.level.more" id="xilinx.gnu.compiler.option.optimization.level.830609352" name="Optimization Level" superClass="xilinx.gnu.compiler.option.optimization.level" valueType="enumerated"/>
+							<option id="xilinx.gnu.compiler.option.debugging.level.1009773337" name="Debug Level" superClass="xilinx.gnu.compiler.option.debugging.level" value="gnu.c.debugging.level.none" valueType="enumerated"/>
+							<option id="xilinx.gnu.compiler.misc.other.189204152" name="Other flags" superClass="xilinx.gnu.compiler.misc.other" value="-c -fmessage-length=0 -MT&quot;$@&quot; -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard" valueType="string"/>
+							<option id="xilinx.gnu.compiler.dircategory.includes.1734641003" name="Include Paths" superClass="xilinx.gnu.compiler.dircategory.includes" valueType="includePath">
+								<listOptionValue builtIn="false" value="&quot;${workspace_loc:/fw_bm_mandelbrot/src/Libs/jpeg-9c}&quot;"/>
+								<listOptionValue builtIn="false" value="&quot;${workspace_loc:/fw_bm_mandelbrot/src/Utility}&quot;"/>
+								<listOptionValue builtIn="false" value="&quot;${workspace_loc:/fw_bm_mandelbrot/src}&quot;"/>
+								<listOptionValue builtIn="false" value="&quot;${workspace_loc:/fw_bm_mandelbrot_bsp/ps7_cortexa9_1/include}&quot;"/>
+							</option>
+							<inputType id="xilinx.gnu.armv7.cxx.compiler.input.184443694" name="C++ source files" superClass="xilinx.gnu.armv7.cxx.compiler.input"/>
+						</tool>
+					</fileInfo>
+					<fileInfo id="xilinx.gnu.armv7.exe.release.943093325.927045800" name="jpegCtrl.cpp" rcbsApplicability="disable" resourcePath="src/JpegCtrl/jpegCtrl.cpp" toolsToInvoke="xilinx.gnu.armv7.cxx.compiler.1749123081">
+						<tool id="xilinx.gnu.armv7.cxx.compiler.1749123081" name="ARM v7 g++ compiler" superClass="xilinx.gnu.armv7.cxx.compiler">
+							<option defaultValue="gnu.c.optimization.level.more" id="xilinx.gnu.compiler.option.optimization.level.1180339715" name="Optimization Level" superClass="xilinx.gnu.compiler.option.optimization.level" valueType="enumerated"/>
+							<option id="xilinx.gnu.compiler.option.debugging.level.456716783" name="Debug Level" superClass="xilinx.gnu.compiler.option.debugging.level" value="gnu.c.debugging.level.none" valueType="enumerated"/>
+							<option id="xilinx.gnu.compiler.misc.other.185441838" name="Other flags" superClass="xilinx.gnu.compiler.misc.other" value="-c -fmessage-length=0 -MT&quot;$@&quot; -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard" valueType="string"/>
+							<option id="xilinx.gnu.compiler.dircategory.includes.1739812082" name="Include Paths" superClass="xilinx.gnu.compiler.dircategory.includes" valueType="includePath">
+								<listOptionValue builtIn="false" value="&quot;${workspace_loc:/fw_bm_mandelbrot/src}&quot;"/>
+								<listOptionValue builtIn="false" value="&quot;${workspace_loc:/fw_bm_mandelbrot/src/Utility}&quot;"/>
+								<listOptionValue builtIn="false" value="&quot;${workspace_loc:/fw_bm_mandelbrot_bsp/ps7_cortexa9_1/include}&quot;"/>
+							</option>
+							<inputType id="xilinx.gnu.armv7.cxx.compiler.input.138113866" name="C++ source files" superClass="xilinx.gnu.armv7.cxx.compiler.input"/>
+						</tool>
+					</fileInfo>
+					<fileInfo id="xilinx.gnu.armv7.exe.release.943093325.595317338" name="mandelbrotCtrl.cpp" rcbsApplicability="disable" resourcePath="src/MandelbrotCtrl/mandelbrotCtrl.cpp" toolsToInvoke="xilinx.gnu.armv7.cxx.compiler.1516881765">
+						<tool id="xilinx.gnu.armv7.cxx.compiler.1516881765" name="ARM v7 g++ compiler" superClass="xilinx.gnu.armv7.cxx.compiler">
+							<option defaultValue="gnu.c.optimization.level.more" id="xilinx.gnu.compiler.option.optimization.level.1062852712" name="Optimization Level" superClass="xilinx.gnu.compiler.option.optimization.level" valueType="enumerated"/>
+							<option id="xilinx.gnu.compiler.option.debugging.level.78546952" name="Debug Level" superClass="xilinx.gnu.compiler.option.debugging.level" value="gnu.c.debugging.level.none" valueType="enumerated"/>
+							<option id="xilinx.gnu.compiler.misc.other.1788165159" name="Other flags" superClass="xilinx.gnu.compiler.misc.other" value="-c -fmessage-length=0 -MT&quot;$@&quot; -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard" valueType="string"/>
+							<option id="xilinx.gnu.compiler.dircategory.includes.1846328914" name="Include Paths" superClass="xilinx.gnu.compiler.dircategory.includes" valueType="includePath">
+								<listOptionValue builtIn="false" value="&quot;${workspace_loc:/fw_bm_mandelbrot/src}&quot;"/>
+								<listOptionValue builtIn="false" value="&quot;${workspace_loc:/fw_bm_mandelbrot/src/Utility}&quot;"/>
+								<listOptionValue builtIn="false" value="&quot;${workspace_loc:/fw_bm_mandelbrot_bsp/ps7_cortexa9_1/include}&quot;"/>
+							</option>
+							<inputType id="xilinx.gnu.armv7.cxx.compiler.input.128213148" name="C++ source files" superClass="xilinx.gnu.armv7.cxx.compiler.input"/>
+						</tool>
+					</fileInfo>
+					<fileInfo id="xilinx.gnu.armv7.exe.release.943093325.1793193295" name="debugMonitor.cpp" rcbsApplicability="disable" resourcePath="src/DebugMonitor/debugMonitor.cpp" toolsToInvoke="xilinx.gnu.armv7.cxx.compiler.689483913">
+						<tool id="xilinx.gnu.armv7.cxx.compiler.689483913" name="ARM v7 g++ compiler" superClass="xilinx.gnu.armv7.cxx.compiler">
+							<option defaultValue="gnu.c.optimization.level.more" id="xilinx.gnu.compiler.option.optimization.level.441008604" name="Optimization Level" superClass="xilinx.gnu.compiler.option.optimization.level" valueType="enumerated"/>
+							<option id="xilinx.gnu.compiler.option.debugging.level.1126829163" name="Debug Level" superClass="xilinx.gnu.compiler.option.debugging.level" value="gnu.c.debugging.level.none" valueType="enumerated"/>
+							<option id="xilinx.gnu.compiler.misc.other.1987151868" name="Other flags" superClass="xilinx.gnu.compiler.misc.other" value="-c -fmessage-length=0 -MT&quot;$@&quot; -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard" valueType="string"/>
+							<option id="xilinx.gnu.compiler.dircategory.includes.177547859" name="Include Paths" superClass="xilinx.gnu.compiler.dircategory.includes" valueType="includePath">
+								<listOptionValue builtIn="false" value="&quot;${workspace_loc:/fw_bm_mandelbrot/src}&quot;"/>
+								<listOptionValue builtIn="false" value="&quot;${workspace_loc:/fw_bm_mandelbrot/src/Utility}&quot;"/>
+								<listOptionValue builtIn="false" value="&quot;${workspace_loc:/fw_bm_mandelbrot_bsp/ps7_cortexa9_1/include}&quot;"/>
+							</option>
+							<inputType id="xilinx.gnu.armv7.cxx.compiler.input.2104283297" name="C++ source files" superClass="xilinx.gnu.armv7.cxx.compiler.input"/>
+						</tool>
+					</fileInfo>
+					<fileInfo id="xilinx.gnu.armv7.exe.release.943093325.491710795" name="videoCtrl.cpp" rcbsApplicability="disable" resourcePath="src/VideoCtrl/videoCtrl.cpp" toolsToInvoke="xilinx.gnu.armv7.cxx.compiler.262315388">
+						<tool id="xilinx.gnu.armv7.cxx.compiler.262315388" name="ARM v7 g++ compiler" superClass="xilinx.gnu.armv7.cxx.compiler">
+							<option defaultValue="gnu.c.optimization.level.more" id="xilinx.gnu.compiler.option.optimization.level.188751342" name="Optimization Level" superClass="xilinx.gnu.compiler.option.optimization.level" valueType="enumerated"/>
+							<option id="xilinx.gnu.compiler.option.debugging.level.55677991" name="Debug Level" superClass="xilinx.gnu.compiler.option.debugging.level" value="gnu.c.debugging.level.none" valueType="enumerated"/>
+							<option id="xilinx.gnu.compiler.misc.other.2133376974" name="Other flags" superClass="xilinx.gnu.compiler.misc.other" value="-c -fmessage-length=0 -MT&quot;$@&quot; -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard" valueType="string"/>
+							<option id="xilinx.gnu.compiler.dircategory.includes.162249147" name="Include Paths" superClass="xilinx.gnu.compiler.dircategory.includes" valueType="includePath">
+								<listOptionValue builtIn="false" value="&quot;${workspace_loc:/fw_bm_mandelbrot/src}&quot;"/>
+								<listOptionValue builtIn="false" value="&quot;${workspace_loc:/fw_bm_mandelbrot/src/Utility}&quot;"/>
+								<listOptionValue builtIn="false" value="&quot;${workspace_loc:/fw_bm_mandelbrot_bsp/ps7_cortexa9_1/include}&quot;"/>
+							</option>
+							<inputType id="xilinx.gnu.armv7.cxx.compiler.input.1351370680" name="C++ source files" superClass="xilinx.gnu.armv7.cxx.compiler.input"/>
+						</tool>
+					</fileInfo>
+					<fileInfo id="xilinx.gnu.armv7.exe.release.943093325.29269087" name="serverIf.cpp" rcbsApplicability="disable" resourcePath="src/ServerIF/serverIf.cpp" toolsToInvoke="xilinx.gnu.armv7.cxx.compiler.1941430067">
+						<tool id="xilinx.gnu.armv7.cxx.compiler.1941430067" name="ARM v7 g++ compiler" superClass="xilinx.gnu.armv7.cxx.compiler">
+							<option defaultValue="gnu.c.optimization.level.more" id="xilinx.gnu.compiler.option.optimization.level.657228579" name="Optimization Level" superClass="xilinx.gnu.compiler.option.optimization.level" valueType="enumerated"/>
+							<option id="xilinx.gnu.compiler.option.debugging.level.211589591" name="Debug Level" superClass="xilinx.gnu.compiler.option.debugging.level" value="gnu.c.debugging.level.none" valueType="enumerated"/>
+							<option id="xilinx.gnu.compiler.misc.other.1279048936" name="Other flags" superClass="xilinx.gnu.compiler.misc.other" value="-c -fmessage-length=0 -MT&quot;$@&quot; -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard" valueType="string"/>
+							<option id="xilinx.gnu.compiler.dircategory.includes.1140529883" name="Include Paths" superClass="xilinx.gnu.compiler.dircategory.includes" valueType="includePath">
+								<listOptionValue builtIn="false" value="&quot;${workspace_loc:/fw_bm_mandelbrot/src}&quot;"/>
+								<listOptionValue builtIn="false" value="&quot;${workspace_loc:/fw_bm_mandelbrot/src/Utility}&quot;"/>
+								<listOptionValue builtIn="false" value="&quot;${workspace_loc:/fw_bm_mandelbrot_bsp/ps7_cortexa9_1/include}&quot;"/>
+							</option>
+							<inputType id="xilinx.gnu.armv7.cxx.compiler.input.882906089" name="C++ source files" superClass="xilinx.gnu.armv7.cxx.compiler.input"/>
+						</tool>
+					</fileInfo>
+					<sourceEntries>
+						<entry excluding="src/ServerIF/OpenAmp/echo_test.c" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+					</sourceEntries>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
+	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+		<project id="fw_bm_mandelbrot.xilinx.gnu.armv7.exe.2058553477" name="Xilinx ARM v7 Executable" projectType="xilinx.gnu.armv7.exe"/>
+	</storageModule>
+	<storageModule moduleId="scannerConfiguration">
+		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		<scannerConfigBuildInfo instanceId="xilinx.gnu.armv7.exe.release.943093325;xilinx.gnu.armv7.exe.release.943093325.">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.xilinx.managedbuilder.ui.ARMA53X32GCCManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="xilinx.gnu.armv7.exe.debug.2109190463;xilinx.gnu.armv7.exe.debug.2109190463.">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.xilinx.managedbuilder.ui.ARMA53X32GCCManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="xilinx.gnu.armv7.exe.release.943093325;xilinx.gnu.armv7.exe.release.943093325.;xilinx.gnu.armv7.c.toolchain.compiler.release.5392610;xilinx.gnu.armv7.c.compiler.input.452471526">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.xilinx.managedbuilder.ui.ARMA53X32GCCManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="xilinx.gnu.armv7.exe.debug.2109190463;xilinx.gnu.armv7.exe.debug.2109190463.;xilinx.gnu.armv7.c.toolchain.compiler.debug.1399580617;xilinx.gnu.armv7.c.compiler.input.661853467">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.xilinx.managedbuilder.ui.ARMA53X32GCCManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+	</storageModule>
+	<storageModule moduleId="refreshScope" versionNumber="2">
+		<configuration configurationName="Debug">
+			<resource resourceType="PROJECT" workspacePath="/fw_bm_mandelbrot"/>
+		</configuration>
+		<configuration configurationName="Release">
+			<resource resourceType="PROJECT" workspacePath="/fw_bm_mandelbrot"/>
+		</configuration>
+	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.internal.ui.text.commentOwnerProjectMappings"/>
+	<storageModule moduleId="org.eclipse.cdt.core.language.mapping">
+		<project-mappings>
+			<content-type-mapping configuration="" content-type="org.eclipse.cdt.core.cxxSource" language="org.eclipse.cdt.core.g++"/>
+		</project-mappings>
+	</storageModule>
+</cproject>

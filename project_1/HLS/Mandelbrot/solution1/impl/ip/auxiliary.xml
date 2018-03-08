@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="mandelbrot" xd:componentRef="mandelbrot" xd:initiationInterval="99614446" xd:clockPeriod="10.000" xd:sequential="true" xd:hostMachine="64" xd:reset="control">
+  <xd:controlReg xd:name="control" xd:interfaceRef="s_axi_AXILiteS" xd:busTypeRef="axilite" xd:type="generic_axi_lite" xd:offset="0x0"/>
+  <xd:arg xd:name="*(vram)" xd:originalName="vram" xd:direction="inout" xd:interfaceRef="m_axi_gmem" xd:busTypeRef="aximm" xd:arraySize="2764800" xd:dataWidth="32" xd:bufferDirection="out"/>
+  <xd:arg xd:name="vram_V" xd:originalName="vram_V" xd:direction="in" xd:interfaceRef="s_axi_AXILiteS" xd:busTypeRef="axilite" xd:aximmInterfaceRef="m_axi_gmem" xd:dataWidth="32" xd:offset="0x10" xd:handshakeRef="ap_none"/>
+  <xd:arg xd:name="centerX" xd:originalName="centerX" xd:direction="in" xd:interfaceRef="s_axi_AXILiteS" xd:busTypeRef="axilite" xd:dataWidth="96" xd:offset="0x18" xd:handshakeRef="ap_none"/>
+  <xd:arg xd:name="centerY" xd:originalName="centerY" xd:direction="in" xd:interfaceRef="s_axi_AXILiteS" xd:busTypeRef="axilite" xd:dataWidth="96" xd:offset="0x28" xd:handshakeRef="ap_none"/>
+  <xd:arg xd:name="zoomHeight" xd:originalName="zoomHeight" xd:direction="in" xd:interfaceRef="s_axi_AXILiteS" xd:busTypeRef="axilite" xd:dataWidth="96" xd:offset="0x38" xd:handshakeRef="ap_none"/>
+  <xd:arg xd:name="updateColorMap" xd:originalName="updateColorMap" xd:direction="in" xd:interfaceRef="s_axi_AXILiteS" xd:busTypeRef="axilite" xd:dataWidth="8" xd:offset="0x48" xd:handshakeRef="ap_none"/>
+  <xd:arg xd:name="colorMap[]" xd:originalName="colorMap" xd:direction="in" xd:interfaceRef="s_axi_AXILiteS" xd:busTypeRef="axilite" xd:dataWidth="8" xd:offset="0x200" xd:arraySize="384"/>
+  <xd:latencyEstimates xd:best-case="2077933" xd:worst-case="99614445" xd:average-case="50922989"/>
+  <xd:resourceEstimates xd:LUT="12839" xd:FF="16190" xd:BRAM="6" xd:DSP="176"/>
+</xd:acceleratorMap>
