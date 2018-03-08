@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<title>Portable Mandelbrot</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="static/css/mystyle.css">
+	</head>
+	<body>
+		<main class="container">
+			<h1>Portable Mandelbrot</h1>
+			<div class="row">
+				<img id="img-mandelbrot" name="img-mandelbrot">
+			</div>
+			<hr>
+			<div class="row">
+				<button type="button" class="btn btn-primary" id="button-left" name="button-left" onClick="pressMoveButton(id)">Left</button>
+				<button type="button" class="btn btn-primary" id="button-up" name="button-up" onClick="pressMoveButton(id)">Up</button>
+				<button type="button" class="btn btn-primary" id="button-down" name="button-down" onClick="pressMoveButton(id)">Down</button>
+				<button type="button" class="btn btn-primary" id="button-right" name="button-right" onClick="pressMoveButton(id)">Right</button>
+				<button type="button" class="btn btn-success" id="button-zoomin" name="button-zoomin" onClick="pressMoveButton(id)">Zoom in</button>
+				<button type="button" class="btn btn-success" id="button-zoomout" name="button-zoomout" onClick="pressMoveButton(id)">Zoom out</button>
+			</div>
+			<br>
+			<div class="row">
+				<button type="button" class="btn btn-primary" id="button-reset" name="button-reset" onClick="pressResetButton(id)">Reset</button>
+				<button type="button" class="btn btn-primary" id="button-color" name="button-color" onClick="pressColorButton(id)">Change Color</button>
+			</div>
+			<hr>
+			<div class="row">
+				<textarea id="textarea-position" name="textarea-position" cols="100" rows="4"></textarea>
+			</div>
+		</main>
+		
+		<!-- load script files -->
+		<script type="text/javascript" src="static/js/dynamic_info.js" charset="utf-8"></script>
+		<script type="text/javascript" src="static/js/init.js" charset="utf-8"></script>
+		<script type="text/javascript" src="static/js/main.js" charset="utf-8"></script>
+	</body>
+</html>
