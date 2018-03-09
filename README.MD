@@ -1,8 +1,21 @@
-# Portable Mandelbrot with ZYBO (Zynq)
-![Picture](00_doc/00_pic.jpg)
+# Portable Mandelbrot Set with ZYBO (Zynq)
+This is a ZYBO (Zynq) project to calculate Mandelbrot set and control/view it anywhere.
 
 - The Mandelbrot set is calculated by FPGA (Zynq PL)
-- Web browser (e.g. smart phone) for controller and viewer
+- A user can control/view it from a web browser (e.g. smartphone)
+
+I use Vivado HLS (C Synthesis) to create the Mandelbrot set calculation IP.
+I use OpenAMP to manage both Baremeal (FreeRTOS) application and Linux application. The server which provides Web APIs is implemented by Python and bottle framework.
+
+
+Youtube Video: https://youtu.be/kXt1YUwyFD0
+
+![Picture](00_doc/00_pic.jpg)
+
+
+## Interpretive article
+https://qiita.com/take-iwiw/items/07adef3350fa4045a2d2
+Please use Google translation.
 
 ## Development Environment
 - Target Board: ZYBO (Z7-20)
@@ -24,7 +37,7 @@
 	- HDMI modules
 		- output the RGB Mandelbrot image to HDMI
 	- JPEG_ENC
-		- T.B.D. I use software jpeg encoder instead
+		- T.B.D. I use software jpeg encoder (libjpeg) instead
 - Baremetal Firmware (CPU1)
 	- Running on FreeRTOS
 	- Each XXXCtrl module controls hardware
@@ -48,7 +61,8 @@
 4. Connect to the server from any browser in the same network as ZYBO
 	- '192.168.1.87:8080'
 
-
+------------------
+------------------
 # The following is memo to modify the project
 
 # How to modify and debug the project
@@ -57,7 +71,7 @@ When you debug, you need to stop auto-started application by disabling init.d da
 
 - Delete or comment out all the lines of the following script
 	- `PjPetaLinuxMandelbrot/project-spec/meta-user/recipes-apps/AppMandelbrot/files/mandelbrot_init_run.sh`
-- Stop auto-started application and OpenAMP manually
+- Or, Stop auto-started application and OpenAMP manually
 
 	```sh:ZYBO_terminal
 	ps aux | grep 'python main.py' | grep -v grep | awk '{ print "kill -9", $1 }' | sh
